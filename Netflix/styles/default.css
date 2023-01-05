@@ -1,0 +1,32 @@
+@import "/styles/header.css";
+@import "/styles/hero.css";
+@import "/styles/content.css";
+@import "/styles/footer.css";
+@import url(about.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #222222;
+}
+
+.main {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 80vh 45vh 45vh 30vh 45vh auto 10vh;
+    grid-auto-columns: auto;
+}
+
+@media (max-width: 780px) {
+    .main {
+        grid-template-rows: 90vh 60vh 60vh 35vh 65vh auto 40vh;
+    }
+}
+

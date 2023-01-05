@@ -1,0 +1,110 @@
+
+.hero {
+    grid-row: 1/2;
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/84526d58-475e-4e6f-9c81-d2d78ddce803/9964214f-ca7d-4d92-9270-00c44862120b/PH-en-20221228-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 22px 200px rgba(0,0,0,0.63) inset;
+    -webkit-box-shadow: 1px 1px 22px 500px rgba(0,0,0,0.63) inset;
+    -moz-box-shadow: 1px 1px 22px 500px rgba(0,0,0,0.63) inset;
+    margin-bottom: 5px;
+}
+
+.hero .hero-page {
+    letter-spacing: 1px;
+    color: white;
+    margin: 10px 50px;
+    max-width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 50px 0px;
+}
+
+.hero .hero-page h1 {
+    font-size: 3.3rem;
+    text-align: center;
+}
+
+.hero .hero-page h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: medium;
+}
+
+.hero .hero-page h3 {
+    font-size: 1rem;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.hero .hero-page .input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.hero .hero-page .input input {
+    padding: 25px 10px ;
+    width: 600px;
+    font-weight: lighter;
+    font-size: 20px;
+    border: none;
+}
+
+.hero .hero-page .input input::placeholder {
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.hero .hero-page .input button {
+    padding:  20px;
+    background-color: crimson;
+    color: white;
+    font-size: 30px;
+    font-weight: medium;
+    border: none;
+    cursor: pointer;
+    width: 230px;
+}
+
+.hero .hero-page .input button:hover {
+    background-color: red;
+}
+
+@media (max-width: 930px) {
+
+    .hero .hero-page {
+        height: 70%;
+    }
+
+    .hero .hero-page h2 {
+        font-size: 2rem;
+     }
+
+     .hero .hero-page h3 {
+        font-size: 1.7rem;
+     }
+
+    .hero .hero-page h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero .hero-page .input button {
+        font-size: 25px;
+        width: 200px;
+        padding: 15px;
+    }
+
+    .hero .hero-page .input {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}

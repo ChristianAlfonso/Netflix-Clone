@@ -1,0 +1,66 @@
+.header {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px 50px;
+    padding-top: 2px;
+    max-width: 100%;
+}
+
+.header .logo-image  {
+    width: 200px;
+}
+
+.header .logo-image img {
+    width: 200px;
+}
+
+.header .nav-right {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header .nav-right .language select{
+    padding: 10px 17px;
+    background: rgba(76, 175, 80, 0.1);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header .nav-right .sign-in {
+    width: 100px;
+    text-align: center;
+}
+
+.header .nav-right a {
+    background-color: crimson;
+    padding: 10px 17px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.header .nav-right a:hover {
+    background-color: red;
+}
+
+@media (max-width: 780px) {
+    .header .nav-right .language select {
+        padding: 20px;
+        font-size: 30px;
+    }
+    .header .nav-right .sign-in { 
+        width: 150px;
+    }
+    .header .nav-right a {
+        padding: 20px;
+        font-size: 30px;
+    }
+
+}

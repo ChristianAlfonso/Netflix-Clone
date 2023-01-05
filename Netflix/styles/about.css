@@ -1,0 +1,123 @@
+.about {
+    grid-row: 6/7;
+    color: white;
+    background-color: black;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.accordion {
+    max-width: 70%;
+    margin: 2rem auto;
+}
+
+.accordion-item {
+    background-color: #303030;
+    color: #fff;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.accordion-item-header {
+    padding: 30px;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+
+.accordion-item-body {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.accordion-item-body-content {
+    letter-spacing: 1px;
+    font-size: 25px;
+    padding: 30px;
+    line-height: 1.5rem;
+    border-top: 3px solid black;
+    border-image: linear-gradient(to right, transparent #34495e, transparent) 1;
+}
+
+.accordion-item-header.active + .accordion-item-body {
+    max-height: 200px;
+}
+
+
+.email-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.email-text {
+    font-size: 20px;   
+    margin-bottom: 10px;
+}
+.about .input {
+    display: flex;
+    align-items: center;
+}
+.about  .input input {
+    padding: 25px 10px ;
+    width: 600px;
+    font-weight: lighter;
+    font-size: 20px;
+    border: none;
+}
+.about .input input::placeholder {
+    font-size: large;
+    font-weight: bold;
+}
+
+.about .input button {
+    padding:  20px;
+    background-color: crimson;
+    color: white;
+    font-size: 30px;
+    font-weight: medium;
+    border: none;
+    cursor: pointer;
+    width: 230px;
+}
+
+    
+@media (max-width: 930px) {
+.about .input button {
+    font-size: 25px;
+    width: 200px;
+    padding: 15px;
+}
+
+.about .input {
+    flex-direction: column;
+    row-gap: 10px;
+    width: 40%;
+}
+}
